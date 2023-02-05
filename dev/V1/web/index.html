@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic hand</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        button,input {
+            width: 25vw;
+            height: 10vh;
+            margin: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <button onclick="movement('F','L')">FL</button>
+            <button onclick="movement('F','R')">FR</button>
+        </div>
+        <div class="row">
+            <button onclick="movement('P','L')">PU</button>
+            <button onclick="movement('P','R')">PD</button>
+        </div>
+        <div class="row">
+            <button onclick="movement('M','L')">MU</button>
+            <button onclick="movement('M','R')">MD</button>
+        </div>
+        <div class="row">
+            <button onclick="movement('L','L')">L</button>
+            <button onclick="movement('R','L')">R</button>
+        </div>
+        <div class="row">
+            <button onclick="movement('B','L')">BL</button>
+            <button onclick="movement('B','L')">BR</button>
+        </div>
+
+        <div class="row">
+            <input type="number" placeholder="speed in %" id="speed">
+            <button onclick="movement('A','S')">STOP</button>
+        </div>
+    </div>
+</body>
+
+</html>
