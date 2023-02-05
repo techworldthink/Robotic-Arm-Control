@@ -1,0 +1,82 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Robotic hand</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-self: center;
+            justify-content: center;
+            align-items: center;
+            min-height: 100%;
+            width: 100%;
+        }
+
+        button,
+        input {
+            width: 25vw;
+            /* height: 10vh; */
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            color: #9c8d9d;
+        }
+
+        h3 {
+            color: #adadad;
+            text-align: center;
+            margin: 0;
+        }
+
+        .row {
+            text-align: left;
+            width: 100%;
+            box-shadow: 0 4px 10px 0 rgb(0 0 0 / 20%), 0 4px 20px 0 rgb(0 0 0 / 19%);
+            margin: 1em;
+            padding: 1em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="row">
+            <h3>Robotic Hand V1</h3>
+        </div>
+        <div class="row">
+            <label for="">FINGER</label>
+            <input type="range" min="0" max="180" class="slider" onchange="movement('F',this.value)" />
+        </div>
+        <div class="row">
+            <label for="">PALM</label>
+            <input type="range" min="0" max="180" class="slider" onchange="movement('P',this.value)" />
+        </div>
+        <div class="row">
+            <label for="">MIDDLE</label>
+            <input type="range" min="0" max="180" class="slider" onchange="movement('M',this.value)" />
+        </div>
+        <div class="row">
+            <label for="">SHOULDER</label>
+            <input type="range" min="0" max="180" class="slider" onchange="movement('LR',this.value)" />
+        </div>
+        <div class="row">
+            <label for="">BASE</label>
+            <input type="range" min="0" max="180" class="slider" onchange="movement('B',this.value)" />
+        </div>
+    </div>
+</body>
+
+</html>
