@@ -7,6 +7,7 @@ void servo_balance(Servo &SERVO_, int &CRNT_POS) {
   delay(10);
 }
 
+
 void servo_control(Servo &SERVO_, int CRNT_POS) {
     SERVO_.write(CRNT_POS);
 }
